@@ -1,159 +1,81 @@
-Here's a simple landing page template for Node BI, an AI consulting and development agency. The design focuses on clarity, engagement, and staying relevant to the services offered.
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Node BI - Your Partner in AI Consulting and Development">
-    <title>Node BI | AI Consulting and Development Agency</title>
+    <title>Node BI - AI Consulting & Development Agency</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Node BI</div>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Transforming Ideas into AI Solutions</h1>
-            <p>Your trusted partner in navigating the world of artificial intelligence.</p>
-            <a href="#contact" class="cta-btn">Get Started</a>
+        <div class="container">
+            <h1>Node BI</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="services" class="services-section">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service">
+    <section class="hero">
+        <div class="container">
+            <h2>Transforming Ideas into Intelligent Solutions</h2>
+            <p>Your trusted partner in AI consulting and development.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-card">
                 <h3>AI Consulting</h3>
-                <p>Get expert insights on AI strategy, implementation, and optimization tailored to your business needs.</p>
+                <p>Expert advice to drive your AI strategy forward and unlock your business potential.</p>
             </div>
-            <div class="service">
-                <h3>Custom AI Development</h3>
-                <p>We specialize in developing custom AI solutions to drive innovation and efficiency for your organization.</p>
+            <div class="service-card">
+                <h3>Custom AI Solutions</h3>
+                <p>Tailored AI applications that meet your unique business requirements.</p>
             </div>
-            <div class="service">
-                <h3>Data Analysis & Visualization</h3>
-                <p>Unlock the power of your data with advanced analytics and visualization to empower decision-making.</p>
-            </div>
-            <div class="service">
-                <h3>Training & Support</h3>
-                <p>Comprehensive training and ongoing support for your team to ensure effective utilization of AI tools.</p>
+            <div class="service-card">
+                <h3>AI Training & Support</h3>
+                <p>Comprehensive training and ongoing support to empower your team on AI technologies.</p>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <p>At Node BI, we are a team of dedicated AI enthusiasts committed to delivering innovative solutions that meet the unique challenges of our clients. With years of experience in artificial intelligence, we combine technical expertise with industry knowledge to bring you the best in AI consulting and development.</p>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Node BI, we specialize in leveraging artificial intelligence to help businesses innovate and excel in their industries. Our experienced team of AI experts is dedicated to delivering solutions that not only meet but exceed client expectations.</p>
+        </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <p>Ready to take your business to the next level with AI? Reach out to us today!</p>
-        <form action="submit_form.php" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Node BI. All rights reserved.</p>
-        <div class="socials">
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
+        <div class="container">
+            <p>&copy; 2023 Node BI. All rights reserved.</p>
+            <div class="socials">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
         </div>
     </footer>
 </body>
 </html>
 ```
-
-### CSS (styles.css)
-You may want to create a separate CSS file called `styles.css` to make the page visually appealing. Here’s a basic style to get you started.
-
-```css
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-header {
-    background: #343a40;
-    color: #ffffff;
-    padding: 1em 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.hero {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.cta-btn {
-    background: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-.services-section, .about-section, .contact-section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.services-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.service {
-    background: #f8f9fa;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    flex-basis: 22%;
-}
-
-footer {
-    background: #343a40;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-}
-```
-
-### Summary
-The provided HTML and CSS template can be further customized according to your design and branding needs. Be sure to add your logo, adjust the color scheme, and content as relevant to your agency's identity and services.
